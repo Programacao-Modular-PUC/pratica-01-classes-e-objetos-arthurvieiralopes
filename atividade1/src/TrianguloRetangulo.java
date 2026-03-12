@@ -5,6 +5,22 @@ public class TrianguloRetangulo {
         private double c2;
         private double h;
 
+        //Construtores
+        public TrianguloRetangulo(){
+
+                this.c1 = 0;
+                this.c2 = 0;
+
+        }
+
+        public TrianguloRetangulo(double c1, double c2){
+
+                this.c1 = c1;
+                this.c2 = c2;
+
+        }
+    
+
 
         //Métodos
         public void setCateto1(double c1){
@@ -28,7 +44,7 @@ public class TrianguloRetangulo {
                
                 h = Math.sqrt(Math.pow(c1, 2) + Math.pow(c2, 2));
                 return h;
-                
+
         }
 
         public double calcularArea(){
